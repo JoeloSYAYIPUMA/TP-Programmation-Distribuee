@@ -1,0 +1,44 @@
+﻿GUIDE - Chat Distribuee (client.py / serv.py)
+
+1) Prerequis
+- Python 3.x installe.
+- Les deux fichiers `serv.py` et `client.py` dans le meme dossier.
+
+2) Demarrer le serveur
+Commande:
+python serv.py
+
+Parametres par defaut:
+- Hote: 127.0.0.1
+- Port: 55555
+
+Commandes serveur disponibles dans la console:
+- stats : affiche les statistiques
+- list  : affiche les clients connectes
+- help  : affiche l'aide
+- quit  : arrete le serveur
+
+3) Demarrer un client
+Commande:
+python client.py
+
+Dans la fenetre de connexion:
+- Serveur: 127.0.0.1 (ou IP du serveur)
+- Port: 55555
+- Nom d'utilisateur: entre 2 et 20 caracteres, unique
+
+4) Fonctions principales
+- Chat general (message public)
+- Messages prives entre utilisateurs connectes
+- Liste des utilisateurs en ligne
+- Theme clair/sombre
+- Affichage des notifications (connexion/deconnexion)
+
+5) Regles utiles
+- Un nom d'utilisateur deja pris est refuse.
+- Un message prive vers un utilisateur non connecte renvoie une erreur.
+- Le serveur envoie des pings; le client repond automatiquement.
+
+6) Arret
+- Client: fermer la fenetre ou se deconnecter depuis l'interface.
+- Serveur: taper `quit` dans la console.
